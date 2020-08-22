@@ -1,16 +1,11 @@
 1. Monger uses MongoDB Java driver 3.x under the hood and thus supports MongoDB 2.2 and later versions.
 
-2. In a document database such as MongoDB the smallest unit is a document. In MongoDB, documents are stored in a collection, 
-which in turn make up a database. Document are analogous to rows in a SQL table, but there is one big difference: not every document 
-needs to have the same structure—each of them can have different fields and that is a very useful feature in many situations. 
-Another feature of MongoDB is that fields in a document can contain arrays and or sub-documents (sometimes called nested or embedded documents).
+2. In a document database such as MongoDB the smallest unit is a document. In MongoDB, documents are stored in a collection,  which in turn make up a database. Document are analogous to rows in a SQL table, but there is one big difference: 
+    1. Not every document needs to have the same structure—each of them can have different fields and that is a very useful feature in many situations. 
+    2. Another feature of MongoDB is that fields in a document can contain arrays and or sub-documents (sometimes called nested or embedded documents).
 
 3. monger.collection/insert-and-return returns the exact documented inserted, including the generated document id.
 
-4. monger.collection/insert-batch is a recommended way of inserting batches of documents (from tens to hundreds of thousands) because it is very
-;; efficient compared to sequentially or even concurrently inserting documents one by one.
+4. monger.collection/insert-batch is a recommended way of inserting batches of documents (from tens to hundreds of thousands) because it is very efficient compared to sequentially or even concurrently inserting documents one by one.
 
-
-;; Document ids in MongoDB do not have to be of the object id type, they also can be strings, integers and any value you can store that MongoDB ;;
-;; knows how to compare order (sort). However, using ObjectIds is usually a good idea.
-
+5. Document ids in MongoDB do not have to be of the object id type, they also can be strings, integers and any value you can store that MongoDB knows how to compare order (sort). However, using ObjectIds is usually a good idea.

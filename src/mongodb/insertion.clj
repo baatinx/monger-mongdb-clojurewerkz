@@ -47,5 +47,4 @@
 
 ;; example of monger.result/acknowledged? - pending
 
-
 ;;Write Failures, Default WriteConcern - pending
